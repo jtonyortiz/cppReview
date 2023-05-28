@@ -129,6 +129,19 @@ point/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/point.dir/build.make CMakeFiles/point.dir/build
 .PHONY : point/fast
 
+#=============================================================================
+# Target rules for targets named dive
+
+# Build rule for target.
+dive: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dive
+.PHONY : dive
+
+# fast build rule for target.
+dive/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dive.dir/build.make CMakeFiles/dive.dir/build
+.PHONY : dive/fast
+
 apps/main.o: apps/main.cpp.o
 .PHONY : apps/main.o
 
@@ -153,6 +166,54 @@ apps/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/point.dir/build.make CMakeFiles/point.dir/apps/main.cpp.s
 .PHONY : apps/main.cpp.s
 
+apps/mainDive.o: apps/mainDive.cpp.o
+.PHONY : apps/mainDive.o
+
+# target to build an object file
+apps/mainDive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dive.dir/build.make CMakeFiles/dive.dir/apps/mainDive.cpp.o
+.PHONY : apps/mainDive.cpp.o
+
+apps/mainDive.i: apps/mainDive.cpp.i
+.PHONY : apps/mainDive.i
+
+# target to preprocess a source file
+apps/mainDive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dive.dir/build.make CMakeFiles/dive.dir/apps/mainDive.cpp.i
+.PHONY : apps/mainDive.cpp.i
+
+apps/mainDive.s: apps/mainDive.cpp.s
+.PHONY : apps/mainDive.s
+
+# target to generate assembly for a file
+apps/mainDive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dive.dir/build.make CMakeFiles/dive.dir/apps/mainDive.cpp.s
+.PHONY : apps/mainDive.cpp.s
+
+include/dive.o: include/dive.cpp.o
+.PHONY : include/dive.o
+
+# target to build an object file
+include/dive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dive.dir/build.make CMakeFiles/dive.dir/include/dive.cpp.o
+.PHONY : include/dive.cpp.o
+
+include/dive.i: include/dive.cpp.i
+.PHONY : include/dive.i
+
+# target to preprocess a source file
+include/dive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dive.dir/build.make CMakeFiles/dive.dir/include/dive.cpp.i
+.PHONY : include/dive.cpp.i
+
+include/dive.s: include/dive.cpp.s
+.PHONY : include/dive.s
+
+# target to generate assembly for a file
+include/dive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dive.dir/build.make CMakeFiles/dive.dir/include/dive.cpp.s
+.PHONY : include/dive.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +222,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... dive"
 	@echo "... point"
 	@echo "... apps/main.o"
 	@echo "... apps/main.i"
 	@echo "... apps/main.s"
+	@echo "... apps/mainDive.o"
+	@echo "... apps/mainDive.i"
+	@echo "... apps/mainDive.s"
+	@echo "... include/dive.o"
+	@echo "... include/dive.i"
+	@echo "... include/dive.s"
 .PHONY : help
 
 

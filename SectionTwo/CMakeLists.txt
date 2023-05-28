@@ -8,3 +8,5 @@ project(point VERSION 1.0)
 include_directories(include)
 
 add_executable(point apps/main.cpp)
+add_executable(dive apps/mainDive.cpp include/dive.cpp include/dive.h)
+
