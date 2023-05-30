@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/dive.dir/apps/mainDive.cpp.o CMakeFiles/dive.dir/include/dive.cpp.o -o dive 

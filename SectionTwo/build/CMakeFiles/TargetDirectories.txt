@@ -1,4 +1,0 @@
-/home/jamesortiz/cppReview/SectionTwo/build/CMakeFiles/point.dir
-/home/jamesortiz/cppReview/SectionTwo/build/CMakeFiles/dive.dir
-/home/jamesortiz/cppReview/SectionTwo/build/CMakeFiles/edit_cache.dir
-/home/jamesortiz/cppReview/SectionTwo/build/CMakeFiles/rebuild_cache.dir
